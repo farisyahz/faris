@@ -1,0 +1,115 @@
+.project-card{
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  color: #252525;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.dark .project-card{
+  background-color: #1f1f1f;
+  color: #eee;
+}
+
+a{
+  text-decoration: none;
+  color: #252525;
+}
+
+.project-card .year{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9rem;
+  color: #999;
+  margin: 0;
+  line-height: 30px;
+}
+
+.dark .project-card .year{
+  color: #f6cd5d;
+}
+
+.project-card h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.dark .project-card h3{
+  color: #f9f9f9;
+}
+
+.project-card h3:hover{
+  text-decoration: underline 2px;
+}
+.project-card .desc{
+  font-size: .9rem;
+  font-weight: 400;
+  color: #666;
+  margin: 0;
+  line-height: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.dark .project-card .desc{
+  color: #bbb;
+}
+
+.project-card .attr{
+  bottom: 1.5rem;
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.project-card button{
+  padding: 8px 10px;
+  background-color: #f6f6f6;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.dark .project-card button{
+  background-color: #2c2c2c;
+  border: 1px solid #444;
+  color: #eee;
+}
+
+.dark .project-card button:hover{
+  border: 1px solid #f6cd5d;
+}
+
+.project-card .source{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.project-card button:hover{
+  border: 1px solid #999;
+}
+
+@media only screen and (max-width:600px){
+  .project-card{
+    padding: 1rem;
+  }
+
+  .project-card .desc{
+    margin-bottom: 15px;
+  }
+  .project-card h3{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

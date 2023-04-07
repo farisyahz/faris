@@ -1,0 +1,49 @@
+.footer{
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: 0.9rem;
+  margin: 30px 0;
+  padding-top: 30px;
+  color: #2c2c2c;
+}
+
+.dark .footer{
+  color: #e6e6e6;
+}
+
+.footer p{
+  margin: 10px 0;
+}
+
+.footer .powered{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer .powered div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.dark .footer .powered p{
+  color: #e6e6e6;
+}
+
+.footer .powered div:hover p{
+  text-decoration: underline 2px;
+}
+
+.dark .footer .powered .github i{
+  color: #ca3ac3;
+}
+
+.footer .powered img{
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 5px;
+}

@@ -1,0 +1,60 @@
+.posts{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  color: #252525;
+}
+
+.posts:hover h3{
+  text-decoration: underline 2px;
+}
+
+.posts:hover .post-date{
+  color: #14ae73;
+}
+
+.dark .posts:hover .post-date{
+  color: #5eddac;
+}
+
+
+.dark .posts{
+  border-bottom: 1px solid #2c2c2c;
+}
+
+.posts h3{
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.dark .posts h3{
+  color: #f9f9f9;
+}
+
+.post-date{
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family:"IBM Plex Mono", monospace;
+  color: #666;
+  margin-top: 5px;
+}
+
+.dark .post-date{
+  color: #5eddac;
+}
+
+
+
+@media only screen and (max-width:600px){
+  .posts{
+    display: block;
+  }
+  .posts h3{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}

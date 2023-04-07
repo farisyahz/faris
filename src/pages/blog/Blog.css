@@ -1,0 +1,44 @@
+.blog{
+  box-sizing: border-box;
+  padding: 0 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #252525;
+  margin-top: 3rem;
+}
+
+.blog h1{
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.dark .blog h1{
+  color: #fff;
+}
+.dark .blog h2{
+  color: #fff;
+}
+
+.blog h2{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 2.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.blog .year{
+  margin: 3rem 0;
+}
+
+@media only screen and (max-width:600px){
+  .blog h1{
+    font-size: 2.2rem;
+  }
+
+  .blog h2{
+    font-size: 2rem;
+  }
+
+  .blog .year{
+    margin: 1.5rem 0;
+  }
+}
