@@ -1,4 +1,4 @@
-.about {
+.post {
   box-sizing: border-box;
   padding: 0 20px;
   max-width: 1200px;
@@ -7,72 +7,98 @@
   display: grid;
   grid-template-columns: 1fr 300px;
   gap: 50px;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
-.dark .about {
+.dark .post {
   color: #fff;
 }
 
-.about a{
+.post article img{
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 1.5rem;
+}
+
+.post a{
   color: #5a43f1;
   text-decoration: underline 2px;
 }
 
-.about a:hover{
+.post a:hover{
   color: #eee;
   background-color: #5a43f1;
   text-decoration: none;
 }
 
-.dark .about a{
+.dark .post a{
   color: #9ca0fa;
 }
 
-.dark .about a:hover{
+.dark .post a:hover{
   color: #2c2c2c;
   background-color: #9ca0fa;
 }
 
-.about article{
+.post article{
   max-width: 700px;
 }
 
-.about h1{
-  font-size: 3rem;
+.post h1{
+  font-size: 2.6rem;
   margin: 0 0 1.5rem;
 }
 
-.about article h2{
+.post article h2{
   font-size: 2rem;
-  margin: 3.5rem 0 1rem;
+  margin: 3rem 0 1rem;
   padding-bottom: 7px;
   border-bottom: 1px solid #ddd;
 
 }
 
-.dark .about article h2{
+.dark .post article h2{
   border-bottom:1px solid #2c2c2c;
 }
 
-.about p{
+.post h3{
+  color: #2c2c2c;
+  font-size: 1.3rem;
+  margin: 3rem 0 1rem;
+}
+
+.dark .post h3{
+  color: #e6e6e6;
+  
+}
+.post p{
   font-size: 1.05rem;
   line-height: 1.625;
   color: #2c2c2c;
+  margin: 0 0 1.5rem;
 }
 
-.about li{
+.post li{
   font-size: 1.05rem;
   line-height: 1.5;
   margin-bottom: 0.5rem;
   color: #2c2c2c;
 }
 
-.dark .about p, .dark .about li{
+.post .side p, .post .side li{
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.dark .post p, .dark .post li{
   color: #e6e6e6;
 }
 
-.about ul{
+.post ul{
   padding-left: 1.5rem;
 }
 
@@ -98,38 +124,58 @@
   background-color: #1f1f1f;
 }
 
-.side .me img{
+.side .about-me p{
+  margin-bottom: 1rem;
+}
+
+.side .about-me p:last-child{
+  margin-bottom: 0;
+}
+
+.side .about-me img{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: 1rem 0;
+  border-radius: 7px;
+}
+
+.comments{
   width: 100%;
-  object-fit: cover;
-  margin-top: 1rem;
 }
 
-.nationality{
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.comments h3{
+  font-size: 1.7rem;
+  margin-bottom: 0;
 }
 
-.nationality img{
-  height: 20px;
-  object-fit: cover;
-  outline: 1px solid #252525;
-}
 
-@media only screen and (max-width:800px){
-  .about{
+@media only screen and (max-width:850px){
+  .post{
     grid-template-columns: 1fr;
   }
 
-  .about h1{
+  .post h1{
     font-size: 2.2rem;
   }
 
-  .about article h2{
+  .post article h2{
     font-size: 1.8rem;
   }
 
-  .about p, .about li{
+  .post h3{
+    font-size: 1.2rem;
+  }
+
+  .post article img{
+    max-height: 250px;
+  }
+
+  .post .comments h3{
+    font-size: 1.5rem;
+  }
+
+  .post article p, .post article li{
     font-size: 1rem;
   }
 }

@@ -8,17 +8,15 @@ import ProjectCard from '../../components/projectCard/ProjectCard'
 
 const Home = () => {
   changeTitle("Faris Syahzani");
-  const last5blog = blogs[2023].slice(-5);
-  const last3project = projects.slice(-3);
-  last3project.reverse()
-  last5blog.reverse()
+  const last5blog = blogs.slice(0,5);
+  const last6project = projects.slice(0,6);
   return (
     <div className='home'>
       <div className="section-about">
         <div className="intro">
           <h1>Hi, I'm Faris!</h1>
-          <p>Welcome to my website.🦊</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum non rem ea exercitationem deserunt magnam cumque officiis pariatur quasi, veniam, illo sint.</p>
+          <p>Welcome to my website 🦊</p>
+          <p>I am a highschool student who has a great interest towards Computer, Maths, and Physics. Ultimately, this website is the spot where I share my ideas, projects, and whatever I feel like sharing.</p>
         </div>
         <img src="./img/laptop.png" alt="" />
       </div>
@@ -45,7 +43,7 @@ const Home = () => {
           </Link>
         </div>
         <div className="projects">
-          {last3project.map(project => {
+          {last6project.map(project => {
             return(
               <ProjectCard item={project}/>
             )

@@ -4,7 +4,7 @@ import './BlogList.css'
 
 const BlogList = ({item}) => {
   return (
-    <Link className='link'>
+    <Link to={item.link} className='link'>
       <div className="posts">
         <div className="post-title">
           <h3>{item.title}</h3>

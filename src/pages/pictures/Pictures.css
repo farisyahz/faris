@@ -1,0 +1,53 @@
+.pictures{
+  box-sizing: border-box;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: #252525;
+  margin-top: 3rem;
+}
+
+.pictures h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.pictures h2{
+  font-size: 2rem;
+  margin: auto;
+}
+
+.dark .pictures h1{
+  color: #fff;
+}
+
+.dark .pictures h2{
+  color: #f6f6f6;
+}
+
+.picture-list {
+  width: 100%;
+  height: 70vh;
+  background-color: #f6f6f6;
+  display: flex;
+  text-align: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.dark .picture-list{
+  background-color: #1f1f1f;
+}
+
+
+
+@media only screen and (max-width:600px) {
+  .pictures h1{
+    font-size:2.2rem
+  }
+
+  .pictures h2{
+    font-size: 1.7rem;
+  }
+  
+}

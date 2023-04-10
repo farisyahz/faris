@@ -12,7 +12,7 @@ const Footer = () => {
             <img src="./img/react.png" alt="react"/>
           </div>
         </a>
-        <a href="https://github.com/farisyahz" target='_blank'>
+        <a href="https://github.com" target='_blank'>
           <div className="github">
             <p>GitHub</p>
             <i class="fa-brands fa-github-alt fa-xl"></i>

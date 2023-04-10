@@ -12,6 +12,9 @@ import Home from './pages/home/Home';
 import About from './pages/about/About';
 import Blog from './pages/blog/Blog';
 import Projects from './pages/projects/Projects';
+import Pictures from './pages/pictures/Pictures';
+import { blogs } from './Data';
+import Post from './components/post/Post';
 
 const App = () => {
   const Layout = () => {
@@ -25,6 +28,15 @@ const App = () => {
       </div>
     )
   }
+
+  const blog_path = blogs.map(blog => {
+    return({
+      path:blog.link,
+      element:<Post item={blog}>
+        {blog.post}
+      </Post>
+    })
+  })
 
   const router = createBrowserRouter([
     {
@@ -41,7 +53,7 @@ const App = () => {
         },
         {
           path:'/blog',
-          element: <Blog/>
+          element: <Blog/>,
         },
         {
           path:'/projects',
@@ -49,8 +61,9 @@ const App = () => {
         },
         {
           path:'/pictures',
-          element: <Projects/>
+          element: <Pictures/>
         },
+        ...blog_path,
         {
           path:'*',
           element: <Navigate to="/"/>
